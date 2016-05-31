@@ -12,6 +12,8 @@ app.controller("TodoCtrl", ($scope, $http) => {
 
   $scope.selectedTodo = 'nothing';
 
+  $scope.congratsMessage = false;
+
   // $scope.tasks = [
   //   { name: "Make the bed", type: "home"},
   //   { name: "Eat breakfast", type: "home"},
