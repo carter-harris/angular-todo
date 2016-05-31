@@ -24,11 +24,32 @@
 
         <form ng-submit="addTodo()">
           <input type="text" ng-model="newTodo">
+          <div class="input-group">
+            <input name="taskType" type="radio" value="home" ng-model="taskType">Home
+            <input name="taskType" type="radio" value="work" ng-model="taskType">Work
+          </div>
+          {{homeTask}}
           <button type="submit" class="btn-default">New Todo</button>
         </form>
 
+
+
         <div>
-          <ul ng-repeat="var_name in tasks | filter: potato | filter: filter2">
+          <label for="type">Task Type</label>
+          <select id="type"
+            ng-model="selectedTodo"
+            ng-options="item.name group by item.type for item in tasks">
+          </select>
+        </div>
+
+        <div>
+          <h2>You have selected {{selectedTodo.name}}</h2>
+        </div>
+
+
+
+        <div>
+          <ul ng-repeat="var_name in tasks | filter: potato">
             <li>{{var_name.name}} <button ng-click="removeTodo(var_name)">Delete</button></li>
           </ul>
         </div>
