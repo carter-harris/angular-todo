@@ -15,13 +15,6 @@
 
     <div ng-hide="checked" class="content-wrapper container-fluid">
 
-      <!-- <label for="filter2">Filter 2</label>
-        <input id="filter2" type="text" ng-model="filter2">
-
-        <input type="checkbox" ng-model="variableName">
-        <div>{{variableName}}</div> -->
-
-
       <!-- Add a Todo Input, Radio buttons, New Todo button -->
       <form ng-submit="addTodo()">
         <label for="">Add a Todo</label>
@@ -81,12 +74,10 @@
         <label for="">Completed</label>
         <input class="inputs" type="checkbox" ng-model="checked" aria-label="Toggle ngHide">
         <br/>
-        <div ng-hide="checked">
-        </div>
+        <div ng-hide="checked"></div>
       </div>
 
-    </div>
-    <!-- class="content-wrapper container-fluid" -->
+    </div> <!-- Opening on line 16  -->
 
 
 
@@ -100,14 +91,13 @@
       </div>
     </div>
 
+  </section> <!-- Opening on line 12 -->
 
 
-  </section>
-  <!-- ng-controller="TodoCtrl" -->
 
   <!-- Angular -->
   <script src="bower_components/angular/angular.min.js"></script>
-  <!-- our scripts -->
+  <!-- My scripts -->
   <script src="app/app.js"></script>
   <script src="app/controllers/todo.js"></script>
 </body>
