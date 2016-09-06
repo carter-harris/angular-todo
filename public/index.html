@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Angular ToDo</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- AngularJS Container -->
+    <div ng-app="TodoApp">
+      <div ng-view></div>
+    </div>
+  </div>
+
+  <!-- Bower Installs -->
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <!-- My scripts -->
+  <script src="app/app.js"></script>
+  <script src="app/todo.ctrl.js"></script>
+  <script src="app/todo.config.js"></script>
+
+</body>
+</html>
