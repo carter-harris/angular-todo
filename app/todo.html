@@ -1,0 +1,128 @@
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-sm-12">
+    <h1>{{todo.title}}</h1>
+    </div>
+  </div>
+
+  <div class="row mainrow">
+    <div class="col-sm-6 leftbox">
+      <!-- Add a Todo Input, Radio buttons, New Todo button -->
+      <form ng-submit="todo.addTodo()">
+        <h3 class="input-labels">Create New Todo</h3>
+        <input class="inputs" type="text" ng-model="todo.newTodo">
+        <div class="input-group">
+          <input class="inputs" name="taskType" type="radio" value="home" ng-model="todo.taskType">Home
+          <input class="inputs" name="taskType" type="radio" value="work" ng-model="todo.taskType">Work</br>
+        </div>
+        {{homeTask}}
+        <i type="submit"class="fa fa-plus-circle" aria-hidden="true"></i>
+        <button type="submit" class="btn-default">New Todo</button>
+      </form>
+    </div>
+
+    <div class="col-sm-6 rightbox">
+      <!-- Filter Input -->
+      <h3 class="input-labels">Filter Todos</h3>
+      <input class="inputs" id="potato" type="text" ng-model="todo.potato">
+      <div>{{potato}}</div>
+
+      <!-- ul of task populated from json file and what is added by the user, with a delete button -->
+      <div>
+        <ul ng-repeat="todo in todo.tasks | filter: potato">
+          <li>{{todo.name}} | {{todo.type}}
+            <button class="btn btn-danger btn-delete" ng-click="todo.removeTodo(var_name)">Delete</button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div ng-hide="checked" class="content-wrapper container-fluid"> -->
+
+    <!-- Add a Todo Input, Radio buttons, New Todo button -->
+<!--     <form ng-submit="todo.addTodo()">
+      <label for="">Add a Todo</label>
+      <br/>
+      <input class="inputs" type="text" ng-model="todo.newTodo">
+      <div class="input-group">
+        <input class="inputs" name="taskType" type="radio" value="home" ng-model="todo.taskType">Home
+        <input class="inputs" name="taskType" type="radio" value="work" ng-model="todo.taskType">Work</br>
+        </br>
+      </div>
+      {{homeTask}}
+      <button type="submit" class="btn-default">New Todo</button>
+      </br>
+      </br>
+    </form> -->
+
+
+    <!-- Filter Input -->
+<!--     <label for="potato">Filter</label>
+    <br/>
+    <input class="inputs" id="potato" type="text" ng-model="todo.potato">
+    <div>{{potato}}</div> -->
+
+
+    <!-- Task Dropdown Menu -->
+ <!--    <div>
+      <label for="type">Task Type</label>
+      <br/>
+      <select id="type" ng-model="todo.selectedTodo" ng-options="todo.item.name group by item.type for item in tasks">
+      </select>
+      </br>
+      </br>
+    </div> -->
+
+
+    <!-- Output of what is selectedin the dropdown menu -->
+ <!--    <div>
+      <h3>You have selected {{todo.selectedTodo.name}}</h3>
+      </br>
+    </div> -->
+
+
+    <!-- ul of task populated from json file and what is added by the user, with a delete button -->
+<!--     <div>
+      <ul ng-repeat="var_name in todo.tasks | filter: potato">
+        <li>{{var_name.name}}
+          <button ng-click="todo.removeTodo(var_name)">Delete</button>
+        </li>
+        </br>
+        </li>
+      </ul>
+    </div>
+ -->
+
+    <!-- Hide Todo App and populate a new page -->
+<!--     <div>
+      <label for="">Completed</label>
+      <input class="inputs" type="checkbox" ng-model="todo.checked" aria-label="Toggle ngHide">
+      <br/>
+      <div ng-hide="checked"></div>
+    </div> -->
+
+
+
+
+

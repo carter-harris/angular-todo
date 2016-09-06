@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+/*  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+*/}
+
+
+h1 {
+  text-align: center;
+  margin: 2% 0;
+  padding: 2rem 0 1em 0;
+}
+
+li {
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+
+.inputs {
+  margin-bottom: 2rem;
+  font-size: 1.9em;
+  width: 100%;
+
+}
+
+.input-labels {
+  text-align: center;
+  margin-top: 0;
+}
+
+.mainrow {
+  border: 1px solid black;
+  display: block;
+}
+
+.leftbox {
+  border: 1px solid black;
+  display: block;
+  padding: 2em;
+  height: 500px;
+}
+
+.rightbox {
+  border: 1px solid black;
+  /*margin-top: 2%;*/
+  display: block;
+  padding: 2em;
+  height: 500px;
+}
+
+.btn-delete {
+  position: absolute;
+  right: 0;
+  margin-right: 5%;
+}

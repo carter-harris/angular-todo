@@ -1,0 +1,9 @@
+{
+  "tasks": [
+    { "name": "Make the bed", "type": "Home"},
+    { "name": "Eat breakfast", "type": "Home"},
+    { "name": "Check the network", "type": "Work"},
+    { "name": "Start up Slack", "type": "Work"},
+    { "name": "Feed the cats", "type": "Home"}
+  ]
+}
