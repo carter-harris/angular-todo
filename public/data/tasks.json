@@ -1,7 +1,7 @@
 {
   "tasks": [
-    { "name": "Make the bed", "type": "Home"},
-    { "name": "Eat breakfast", "type": "Home"},
+    { "name": "Make the bed before leaving for work", "type": "Home"},
+    { "name": "Cook breakfast and make coffee @8am", "type": "Home"},
     { "name": "Check the network", "type": "Work"},
     { "name": "Start up Slack", "type": "Work"},
     { "name": "Feed the cats", "type": "Home"}
