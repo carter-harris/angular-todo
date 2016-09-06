@@ -29,9 +29,9 @@
 
       <!-- ul of task populated from json file and what is added by the user, with a delete button -->
       <div>
-        <ul ng-repeat="todo in todo.tasks | filter: potato">
-          <li>{{todo.name}} | {{todo.type}}
-            <i class="fa fa-trash-o btn-delete" ng-click="todo.removeTodo(todo)" aria-hidden="true"></i>
+        <ul ng-repeat="todoItem in todo.tasks | filter: potato">
+          <li>{{todoItem.name}} | {{todoItem.type}}
+            <i class="fa fa-trash-o btn-delete" ng-click="todo.removeTodo(todoItem)" aria-hidden="true"></i>
           </li>
         </ul>
       </div>
