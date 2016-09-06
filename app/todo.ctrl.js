@@ -2,7 +2,7 @@
 angular.module('TodoApp').controller("TodoCtrl", function ($http) {
   const todo = this;
 
-  todo.title = 'Angular Todo - PFM!';
+  todo.title = 'Todo App';
   todo.filter2 = '';
   todo.potato = '';
   todo.variableName = '';
@@ -10,8 +10,6 @@ angular.module('TodoApp').controller("TodoCtrl", function ($http) {
 
   todo.taskType = 'home';
   todo.selectedTodo = 'nothing';
-
-  todo.congratsMessage = false;
 
 
   $http.get('/data/tasks.json')
@@ -22,13 +20,14 @@ angular.module('TodoApp').controller("TodoCtrl", function ($http) {
 
 
   todo.addTodo = function () {
+    console.log("add");
     todo.tasks.push({ name: todo.newTodo, type: todo.taskType});
     todo.newTodo = '';
   }
 
 
-  todo.removeTodo = function (task) {
-    const taskIndex = todo.tasks.indexOf(task);
+  todo.removeTodo = function (todo) {
+    const taskIndex = todo.tasks.indexOf(todo);
     if (taskIndex >= 0) {
       todo.tasks.splice(taskIndex, 1); // eslint-disable-line no-magic-numbers
     }
