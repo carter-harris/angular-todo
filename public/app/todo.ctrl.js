@@ -7,6 +7,7 @@ angular.module('TodoApp').controller("TodoCtrl", function ($http) {
   todo.potato = '';
   todo.variableName = '';
   todo.newTodo = '';
+  todo.tasks = [];
 
   todo.taskType = 'home';
   todo.selectedTodo = 'nothing';
@@ -26,8 +27,8 @@ angular.module('TodoApp').controller("TodoCtrl", function ($http) {
   }
 
 
-  todo.removeTodo = function (todo) {
-    const taskIndex = todo.tasks.indexOf(todo);
+  todo.removeTodo = function (todoItem) {
+    const taskIndex = todo.tasks.indexOf(todoItem);
     if (taskIndex >= 0) {
       todo.tasks.splice(taskIndex, 1); // eslint-disable-line no-magic-numbers
     }
