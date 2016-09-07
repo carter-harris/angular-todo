@@ -1,9 +1,9 @@
 {
   "tasks": [
-    { "name": "Make the bed before leaving for work", "type": "Home"},
-    { "name": "Cook breakfast and make coffee @8am", "type": "Home"},
-    { "name": "Check the network", "type": "Work"},
-    { "name": "Start up Slack", "type": "Work"},
-    { "name": "Feed the cats", "type": "Home"}
+    { "name": "Make the bed before leaving for work to mess it up again later", "type": "Home"},
+    { "name": "Cook breakfast and make coffee..wish it was already made", "type": "Home"},
+    { "name": "Check emails and unsubscribe to emails", "type": "Work"},
+    { "name": "Start up Slack and not read the random channels", "type": "Work"},
+    { "name": "Feed the cat and tell it how fat it is", "type": "Home"}
   ]
 }
