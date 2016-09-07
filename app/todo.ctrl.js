@@ -13,7 +13,7 @@ angular.module('TodoApp').controller("TodoCtrl", function ($http) {
   todo.selectedTodo = 'nothing';
 
 
-  $http.get('/data/tasks.json')
+  $http.get('data/tasks.json')
     .then((response) => {
       console.log("data", response );
       todo.tasks = response.data.tasks;
