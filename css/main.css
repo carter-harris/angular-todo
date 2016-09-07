@@ -32,8 +32,7 @@ h1 {
   text-align: center;
   margin: 2% 0;
   padding: 2rem 0 1em 0;
-  font-weight: 400;
-  /*color: #19B5FE;*/
+  font-weight: 300;
   color: #FFF;
 }
 
@@ -60,7 +59,7 @@ li {
   text-align: center;
   font-weight: 300;
   background: #FFF;
-  color: #22313F;
+  color: #28274B;
 }
 
 .rightbox {
@@ -71,7 +70,7 @@ li {
   height: 500px;
   font-weight: 300;
   background: #19B5FE;
-  color: #22313F;
+  color: #FFF;
 }
 
 
@@ -121,11 +120,11 @@ li {
 
 .add-icon {
   font-size: 6em;
-  color: #D2527F;
+  color: #EAA6A2;
 }
 
 .add-icon:hover {
   cursor: pointer;
-  color: #FFF;
+  color: #e48a85;
   font-size: 6.4em;
 }
