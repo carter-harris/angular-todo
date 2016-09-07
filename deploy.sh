@@ -1,7 +1,7 @@
 #! /bin/sh
 git checkout -b gh-temp
 # gulp build
-echo '!public/lib' >> .gitignore
+echo '!public/bower_components' >> .gitignore
 git add -A
 git commit -m "lib for gh-pages"
 git subtree split --prefix public -b gh-pages
