@@ -5,7 +5,7 @@
 ***Objectives***:
 Create a todo app that can add todos, delete todos, and filter todos
 
-Techonolgies used (AnuglarJS and Bootstarp)
+Technologies used (AngularJS and Bootstrap)
 
 
 ### Requirements
